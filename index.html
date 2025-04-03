@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCraft: A Jornada do Cientista de Dados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    
+    <!-- Carregamento de Bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    
+    <!-- Dados do Jogo -->
+    <script src="js/data/buildings.js"></script>
+    <script src="js/data/npcs.js"></script>
+    <script src="js/data/tasks.js"></script>
+    <script src="js/data/datasets/customers.js"></script>
+    <script src="js/data/datasets/sales.js"></script>
+    
+    <!-- Utilitários -->
+    <script src="js/utils/pyodide-manager.js"></script>
+    
+    <!-- Cenas do Jogo -->
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/MainMenuScene.js"></script>
+    <script src="js/scenes/WorldScene.js"></script>
+    <script src="js/scenes/BuildingScene.js"></script>
+    <script src="js/scenes/DialogScene.js"></script>
+    <script src="js/scenes/ComputerScene.js"></script>
+    
+    <!-- Código Principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>

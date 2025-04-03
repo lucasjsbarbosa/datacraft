@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.code-editor {
+    width: 90%;
+    height: 200px;
+    background: #1e1e1e;
+    color: #f8f8f8;
+    border: none;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Estilo para mensagens de carregamento */
+.loading-message {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Ocultar barra de rolagem, mas permitir rolagem */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Para Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* Estilo para botão de tela cheia */
+#fullscreen-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
